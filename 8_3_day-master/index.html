@@ -698,7 +698,7 @@
             style="display:none;" />
     </svg>
 
-    <script>
+    <!-- <script>
         let rid = null; // request animation id
         const SVG_NS = "http://www.w3.org/2000/svg";
         const pathlength = shape.getTotalLength();
@@ -865,9 +865,9 @@
             //console.log(d)
             partialPath.setAttributeNS(null, "d", d);
         }
-    </script>
+    </script> -->
 
-    <div id="castle" style="display: none;">
+    <div id="castle" class="thu" style="display: none;">
         <div class="letter">
             <div class="valentines">
                 <div class="envelope"></div>
@@ -1155,16 +1155,16 @@
         }
         $(document).ready(function () {
             $('.valentines').mouseenter(function () {
-                $('.card').stop().animate({
+                $('.thu').stop().animate({
                     top: '-90px'
                 }, 'slow');
             }).mouseleave(function () {
-                $('.card').stop().animate({
+                $('.thu').stop().animate({
                     top: 0
                 }, 'slow');
             });
 
-            $('.card').click(function () {
+            $('.thu').click(function () {
                 $('.box-content').addClass('active');
                 $(".wrapperLetterForm").fadeIn()
                 funcTimeoutLetter();
@@ -1214,7 +1214,7 @@
                 rose4.setAttribute("stroke", "black");
                 rose4.setAttribute("fill", "none");
             },
-            complete: function (anim) {
+            complete: function (anim) { 
                 //Leaf One
                 leafOne.setAttribute("fill", "#9CDD05");
                 leafOne.setAttribute("stroke", "none");
@@ -1244,6 +1244,7 @@
         });
 
     </script>
+    
 </body>
 
 </html>
